@@ -1,0 +1,231 @@
+/* Global Styles */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #050505;
+    background-color: #f2f2f2;
+    margin: 0;
+
+}
+
+h1,
+h2,
+h3 {
+    font-weight: bold;
+    margin: 0 0 1rem;
+
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #0c0404;
+    text-shadow: 0 0 10px rgba(10, 10, 10, 0.5);
+    background-color: rgb(243, 241, 247);
+    padding: 0.5rem;
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: 1.2rem;
+    color: #040404;
+    text-shadow: 0 0 10px rgba(1, 1, 1, 0.5);
+    background-color: rgb(243, 241, 247);
+    padding: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+
+h3 {
+    font-size: 1.5rem;
+}
+
+a {
+    color: #faf7f7;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+}
+
+a:hover {
+    color: #dfea06;
+    box-shadow: 0 0 10px rgba(65, 138, 6, 0.5);
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav li {
+    margin-right: 1rem;
+}
+
+nav li:last-child {
+    margin-right: 0;
+}
+
+/* Layout Styles */
+
+header {
+    /*This is for the Text*/
+    background-color: #fff;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    font-weight: bold;
+
+
+    /*This is for the Background*/
+
+    background-image: url('https://media.giphy.com/media/iqdAZhN5mtuwi4kQxU/giphy.gif');
+    background-size: cover;
+    background-position: center;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    color: #fff;
+
+}
+
+main {
+    max-width: 800px;
+    margin: 10rem auto 5rem auto;
+    padding: 10rem;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+
+    /* This is for the background*/
+
+    background-image: url('https://media.giphy.com/media/rDDgn20HfDOP7fvtBF/giphy.gif');
+    background-position: center;
+    padding: 10rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    top: 2;
+    left: 30;
+    width: 100%;
+    color: #060606;
+    font-weight: bold;
+    background-size: cover;
+    opacity: 0.6;
+    background-size: 55%;
+}
+
+/*footer only*/
+
+footer {
+    background-color: #222;
+    color: #fff;
+    padding: 2rem;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-logo {
+    text-align: left;
+}
+
+.footer-logo h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.footer-logo p1 {
+    font-size: 1rem;
+    margin: 0;
+}
+
+.footer-contact {
+    text-align: left;
+}
+
+.footer-contact h4 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.footer-contact p1 {
+    font-size: 1rem;
+    margin: 0;
+}
+
+.footer-copy {
+    position: right;
+    bottom: 0;
+    right: 15;
+    text-align: right;
+    margin: 5 10rem 10rem 5;
+  }
+  
+
+.footer-copy p1 {
+    font-size: 0.8rem;
+    margin: 0;
+}
+
+
+
+/* Page-Specific Styles */
+
+/* Upcoming Shows */
+
+main ul {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 2rem;
+}
+
+main li {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+}
+
+main h3 {
+    grid-column: 1 / span 2;
+}
+
+main a {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    border: 2px solid #0c0404;
+    border-radius: 4px;
+    background-color: #5c64ff;
+    color: #fff;
+    font-weight: bold;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+main a:hover {
+    background-color: transparent;
+    color: #ff5c5c;
+}
